@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TreeView?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TreeItem?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="anchorPaneStage" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.motorcade.desktop.controller.HomeController">
+   <children>
+   		<VBox prefHeight="500.0" prefWidth="800.0" spacing="9.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+               <HBox maxHeight="1.7976931348623157E308" maxWidth="Infinity" prefHeight="25.0" prefWidth="784.0" VBox.vgrow="ALWAYS">
+                  <children>
+                     <MenuBar prefHeight="25.0" prefWidth="800.0" HBox.hgrow="ALWAYS">
+                       <menus>
+                         <Menu mnemonicParsing="false" text="文件">
+                           <items>
+                             <MenuItem mnemonicParsing="false" text="新建" />
+                           </items>
+                           <items>
+                             <MenuItem mnemonicParsing="false" onAction="#resouceAdmin" text="资源管理" />
+                           </items>
+                         </Menu>
+                         <Menu mnemonicParsing="false" text="编辑">
+                           <items>
+                             <MenuItem mnemonicParsing="false" text="Delete" />
+                           </items>
+                         </Menu>
+                         <Menu mnemonicParsing="false" text="窗口">
+                           <items>
+                             <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                         </Menu>
+                           <Menu mnemonicParsing="false" text="设置">
+                             <items>
+                               <MenuItem mnemonicParsing="false" onAction="#exitLogin" text="退出登录" />
+                             </items>
+                             <items>
+                               <MenuItem mnemonicParsing="false" onAction="#pullData" text="数据同步(拉取)" />
+                             </items>
+                             <items>
+                               <MenuItem mnemonicParsing="false" onAction="#pushData" text="数据同步(提交)" />
+                             </items>
+                           </Menu>
+                       </menus>
+                     </MenuBar>
+                  </children>
+               </HBox>
+               <SplitPane dividerPositions="0.2" prefHeight="10000.0" VBox.vgrow="ALWAYS">
+                 <items>
+                   <AnchorPane maxWidth="160.0" minWidth="160.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false" VBox.vgrow="ALWAYS">
+                      <children>
+                        <VBox maxWidth="160.0" minWidth="160.0" prefHeight="423.0" prefWidth="153.0" spacing="9.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="NEVER">
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="9.0" />
+                           </padding>
+                           <children>
+                           	<Label fx:id="clickedPair" maxWidth="160.0" prefHeight="22.0" prefWidth="137.0" text="菜单项" />
+                              <TreeView fx:id="tv" layoutX="0" layoutY="0" maxWidth="160.0" VBox.vgrow="ALWAYS">
+                        	  </TreeView>
+                           </children>
+                        </VBox>
+                      </children>
+                   </AnchorPane>
+                   <AnchorPane fx:id="anchorPaneBly" maxHeight="Infinity" maxWidth="Infinity" style="-fx-background-color: #6f89e2;" SplitPane.resizableWithParent="false" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox maxHeight="Infinity" maxWidth="Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Pane fx:id="homePane" HBox.hgrow="ALWAYS">
+                                 <children>
+                                 	<Label alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" text="1234">
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                   </AnchorPane>
+                 </items>
+               </SplitPane>
+               <HBox maxWidth="Infinity" prefHeight="30.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+                  <children>
+                     <Label layoutX="100.0" prefHeight="30.0" prefWidth="30.0" text="底部" textFill="#1b1c1e" />
+                  </children>
+               </HBox>
+            </children>
+            <padding>
+               <Insets bottom="8.0" left="8.0" right="8.0" top="9.0" />
+            </padding>
+         </VBox>
+      	 <AnchorPane fx:id="loadAnchorPane" prefHeight="500.0" prefWidth="834.0" style="-fx-background:transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+   </children>
+</AnchorPane>

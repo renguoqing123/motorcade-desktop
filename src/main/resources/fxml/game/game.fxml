@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="254.0" prefWidth="373.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="62.0" prefWidth="374.0" text="这是个游戏页面" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
