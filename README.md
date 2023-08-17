@@ -1,2 +1,2 @@
 # motorcade-desktop
-桌面管理系统
+基于javaFX后台管理系统 (cs架构)
